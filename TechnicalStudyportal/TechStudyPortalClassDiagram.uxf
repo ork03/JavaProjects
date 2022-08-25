@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>10</x>
+      <y>10</y>
+      <w>210</w>
+      <h>120</h>
+    </coordinates>
+    <panel_attributes>package com.techstudy.controller
+UserRegistrationController
+--
+-userService:UserService
+--
++userRegistrationDto():UserRegistrationDto
++showRegistrationForm():String
++registerUserAccount():String
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>50</x>
+      <y>1040</y>
+      <w>310</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>package com.techstudy.controller.dto
+UserRegistrationDto
+--
+-id:Long
+-firstName:String
+-lastName:String
+-password:String
+-email:String
+-roles:Collection
+--
++User:Constructor{with and without parameters}
++getId():Long
++getFirstName():String
++getLastName():String
++getPassword():String
++getEmail():String
++getRoles():Collection
++setId():void
++setFirstName():void
++setLastName():void
++setEmail():void
++setPassword():void
++setRoles():void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>460</x>
+      <y>0</y>
+      <w>210</w>
+      <h>360</h>
+    </coordinates>
+    <panel_attributes>package com.techstudy.controller
+TechStudyController
+--
+-DETAILS:String
+-DISPLAYCURDURL:String
+-DISPLAYSTUDYURL:String
+-ERRORURL:String
+-ts:TechStudyImpl
+-userService:UserService
+-adminService:AdminService
+--
++loginuser():String
++validation():String
++getall():String
++home():String
++adminlogin():String
++validatingAdmin():String
++save():ModelAndView
++cruddetails():String
++addnewrow():String
++delete():ModelAndView
++edit():String
++update():Sring
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>600</y>
+      <w>240</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>package com.techstudy.entity
+Admin
+--
+-id:Long
+-username:String
+-password:String
+-roles:Collection
+--
++Admin():Constructor
++getId():Long
++getUsername():String
++getPassword():String
++getRoles():Collection
++setId():void
++setUsername():void
++setPassword():void
++setRoles():void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>620</y>
+      <w>240</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>package com.techstudy.entity
+Role
+--
+-url:String
+-courseName:String
+
+--
++getUrl():String
++getCourseName():String
++setUrl():void
++setCourseName():void
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>450</x>
+      <y>410</y>
+      <w>240</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>package com.techstudy.entity
+Role
+--
+-id:Long
+-name:String
+
+--
++Role():Constructor
++Role(name:String):Constructor
++getId():Long
++getName():String
++setId():void
++setName():void
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>300</x>
+      <y>820</y>
+      <w>390</w>
+      <h>210</h>
+    </coordinates>
+    <panel_attributes>package com.techstudy.entity
+TechStudyEntity
+--
+-id:Long
+-url:String
+-courseName:String
+--
++TechStudyEntity:Constructor
++TechStudyEntity(courseName:String,url:String):Constructor
++getId():Long
++setId():void
++getUrl():String
++getCourseName():String
++setUrl():void
++setCourseName():void
+
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>180</x>
+      <y>190</y>
+      <w>240</w>
+      <h>390</h>
+    </coordinates>
+    <panel_attributes>package com.techstudy.controller.dto
+UserRegistrationDto
+--
+-firstName:String
+-lastName:String
+-password:String
+-confirmPassword:String
+-email:String
+-confirmEmail:String
+-terms:Boolean
+--
++getFirstName():String
++getLastName():String
++getPassword():String
++getConfirmPassword():String
++getEmail():String
++getConfirmEmail():String
++getTerms():Boolean
++setFirstName():void
++setLastName():void
++setEmail():void
++setConfirmEmail():void
++setPassword():void
++setConfirmPassword():void
++setTerms():void
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>400</x>
+      <y>1090</y>
+      <w>240</w>
+      <h>250</h>
+    </coordinates>
+    <panel_attributes>package com.techstudy.entity
+Admin
+--
+-id:Long
+-username:String
+-password:String
+-roles:Collection
+--
++Admin():Constructor
++getId():Long
++getUsername():String
++getPassword():String
++getRoles():Collection
++setId():void
++setUsername():void
++setPassword():void
++setRoles():void
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
