@@ -70,6 +70,5 @@ class TechnicalStudyportalApplicationTests {
 		boolean notexistedafterdelete=tsr.findById(id).isPresent();
 		Assertions.assertTrue(existedbeforedelete);
 		Assertions.assertFalse(notexistedafterdelete);
-
 	}
 }

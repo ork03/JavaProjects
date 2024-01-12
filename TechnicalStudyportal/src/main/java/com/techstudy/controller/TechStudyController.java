@@ -88,7 +88,7 @@ public class TechStudyController {
 	}
 	
 	
-	@RequestMapping("/studydetails")
+	@RequestMapping("studydetails")
 	public String getall(Model m) {
 		
 		List<TechStudyEntity> li=ts.fetchList();
